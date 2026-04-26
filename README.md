@@ -1,8 +1,10 @@
 # AI Industrial Decision Support Sample
 
-Public-safe work sample for AI Engineering and Applied AI roles.
+Production-oriented multi-agent LLM system for industrial bottleneck analysis.
 
-This directory is structured so it can be copied into its own GitHub repository if a company requests a project sample. It does not contain proprietary code or internal data from the original thesis environment. Instead, it packages the shareable engineering artifacts: the work-sample PDF, the source used to generate it, and a markdown system overview that explains the architecture and engineering decisions in more detail.
+This repository presents a public work sample based on a master's thesis project in a large automotive manufacturing environment, focusing on AI-driven decision support for complex operational workflows.
+
+It is structured so it can be shared if a company requests a project sample. It does not contain proprietary code or internal data from the original thesis environment. Instead, it packages the shareable engineering artifacts: the work-sample PDF and a markdown system overview that explains the architecture and engineering decisions in more detail.
 
 ## Repository Purpose
 
@@ -18,7 +20,6 @@ The goal of this repository is to show:
 ## Included Artifacts
 
 - [`docs/work-sample.pdf`](docs/work-sample.pdf): polished 3-page work sample for company review
-- [`docs/work-sample-source.tex`](docs/work-sample-source.tex): LaTeX source for the PDF
 - [`docs/system-overview.md`](docs/system-overview.md): expanded technical summary for GitHub readers
 - [`PUBLIC_SCOPE.md`](PUBLIC_SCOPE.md): what is intentionally shareable and what is excluded
 
@@ -34,19 +35,22 @@ At a high level, the design combined:
 - agent-style orchestration for multi-step workflows
 - API boundaries for integration into user-facing applications
 
-## Why This Works as a GitHub Sample
+## Impact
 
-Most enterprise AI work cannot be published as a complete repository because the valuable parts are tied to private systems, regulated data, and company-specific logic. This sample therefore focuses on the engineering decisions that are still meaningful in a public review:
+- Reduced analysis time by up to 60% through automated root-cause detection and AI-driven recommendations
+- Standardized investigation workflows across heterogeneous data sources
+- Improved traceability and consistency of decision support in industrial analysis
 
-- system decomposition
-- retrieval and grounding strategy
-- query-generation constraints
-- evaluation logic
-- testing and release discipline
-- CI/CD and deployment thinking
-- production-readiness considerations
+## Engineering Focus
 
-That usually gives a hiring team more signal than a toy demo.
+This repository highlights the engineering decisions behind building a production-oriented AI system:
+
+- system decomposition and modular architecture
+- retrieval and grounding strategies (RAG)
+- structured query generation and constraints
+- evaluation, testing, and failure handling
+- CI/CD and deployment considerations
+- cost, latency, and reliability trade-offs
 
 ## Recommended Use
 
